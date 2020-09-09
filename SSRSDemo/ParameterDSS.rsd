@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>TV03</DataSourceReference>
+      <CommandText>SELECT [orderid]
+      ,[custid]
+      ,[empid]
+      ,[orderdate]
+      ,[requireddate]
+      ,[shippeddate]
+      ,[shipname]
+      ,[shipcity]
+  FROM [TSQLV3].[Sales].[Orders]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="orderid">
+        <DataField>orderid</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="custid">
+        <DataField>custid</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="empid">
+        <DataField>empid</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="orderdate">
+        <DataField>orderdate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="requireddate">
+        <DataField>requireddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="shippeddate">
+        <DataField>shippeddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="shipname">
+        <DataField>shipname</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="shipcity">
+        <DataField>shipcity</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
